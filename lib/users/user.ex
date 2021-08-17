@@ -6,15 +6,13 @@ defmodule Exlivery.Users.User do
 
   def build(name, email, cpf, age) when age >= 18 and is_bitstring(cpf) do
     {:ok,
-      %__MODULE__{
-        name: name,
-        email: email,
-        cpf: cpf,
-        age: age
-      }
-    }
+     %__MODULE__{
+       name: name,
+       email: email,
+       cpf: cpf,
+       age: age
+     }}
   end
 
   def build(_name, _email, _cpf, _age), do: {:error, "Invalid Parameters"}
-
 end
