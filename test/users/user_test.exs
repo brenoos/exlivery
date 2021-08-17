@@ -1,5 +1,6 @@
 defmodule Exlivery.Users.UserTest do
   use ExUnit.Case
+
   alias Exlivery.Users.User
 
   import Exlivery.Factory
