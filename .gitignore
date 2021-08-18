@@ -25,4 +25,4 @@ exlivery-*.tar
 # Temporary files, for example, from tests.
 /tmp/
 
-report.csv
+report*.csv
